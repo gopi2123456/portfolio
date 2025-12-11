@@ -1,138 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aavala Gopi | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aavala Gopi — Portfolio</title>
+  <meta name="description" content="Portfolio of Aavala Gopi — B.Tech ECE | Java Full Stack Trainee | Road Classification & Pothole Detection" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Aavala Gopi</a>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <h2 class="logo">Gopi</h2>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <button id="themeToggle" aria-label="Toggle theme">🌗</button>
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm <span>Aavala Gopi</span></h1>
-      <p>Electronics & Communication Engineer | Java Full Stack Trainee | Developer</p>
-      <br>
-    
-      <a href="#projects" class="btn">🚀 View My Projects</a>
-    </div>
-  </section>
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi — I'm <span class="accent">Aavala Gopi</span></h1>
+          <p class="lead">B.Tech in Electronics & Communication | Java Full Stack Trainee | Building robust web apps and ML-based road perception systems.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="mailto:gopiavala702@gmail.com">Hire Me</a>
+          </div>
+          <ul class="contact-line">
+            <li>📍 Veerannapalem, Parchur, Bapatla, AP</li>
+            <li>📞 <a href="tel:+918309308146">8309308146</a></li>
+            <li>✉️ <a href="mailto:gopiavala702@gmail.com">gopiavala702@gmail.com</a></li>
+          </ul>
+        </div>
 
-  <!-- About -->
-  <section id="about" class="about glass">
-    <h2>About Me</h2>
-    <p>
-      I am a B.Tech graduate in Electronics & Communication Engineering from KKR & KSR Institute of Technology & Sciences with an 8.0 CGPA.  
-      Passionate about software development and problem-solving, with experience in Java, Python, SQL, and Embedded Systems.  
-      Currently training as a Java Full Stack Developer at Codegnan IT Solutions, working on both front-end and back-end technologies.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <h2 class="margin">Technical Skills</h2>
-    <br>
-    <div class="skill-cards">
-      <div class="card">💻 Java</div>
-      <div class="card">🐍 Python</div>
-      <div class="card">⚡ C</div>
-      <div class="card">🗄️ SQL</div>
-      <div class="card">🌐 HTML, CSS, JS</div>
-      <div class="card">☁️ Google Cloud</div>
-      <div class="card">🤖 YOLOv8 & ML</div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="experience glass">
-    <h2>Experience</h2>
-    <div class="exp-card">
-      <h3>Codegnan IT Solutions | Java Full Stack Trainee</h3>
-      <p><i>June 2025 – Present | Hyderabad, Telangana</i></p>
-      <ul>
-        <li>Hands-on training in Core Java, Advanced Java, HTML, CSS, JavaScript, and SQL.</li>
-        <li>Developing and integrating RESTful APIs with Spring Boot & JDBC.</li>
-        <li>Working on mini projects, debugging, and real-time problem-solving.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <h2 class="margin">Projects</h2>
-    <div class="project-grid">
-
-      <div class="project-card">
-        <h3>🚦 Road Classification & Pothole Detection</h3>
-        <p>
-          Built a YOLOv8-based system for pothole detection & road classification using 8,000+ annotated images.  
-          Supports Level 3 autonomy with real-time adaptive navigation for Indian roads.
-        </p>
-        <br>
-        <a href="https://github.com/gopi2123456" target="_blank" class="btn">View on GitHub</a>
+        <div class="hero-image">
+          <!-- put a profile image at assets/profile.jpg -->
+          <img src="/assets/gopi pic.jpg" alt="Aavala Gopi — profile photo" width="50px" height="400px"/>
+        </div>
       </div>
+    </section>
 
-      <div class="project-card">
-        <h3>🚗 Anti-Sleeping Alarm in Cars</h3>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
         <p>
-          Developed a driver fatigue detection system using Arduino & Embedded C.  
-          Implemented alert mechanisms (sound, vibration, lights) to enhance driving safety.
+          I'm a recent B.Tech graduate in Electronics & Communication Engineering (KKR &amp; KSR Institute of Technology &amp; Sciences). Currently training as a Java Full Stack developer at Codegnan IT Solutions. I'm passionate about combining embedded systems, signal processing and deep learning to solve real-world problems — recently worked on road classification and pothole detection using YOLO models and custom datasets.
         </p>
-        <br>
-        <a href="https://github.com/gopi2123456" target="_blank" class="btn">View on GitHub</a>
+        
       </div>
+    </section>
 
+    <!-- Projects -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Road Classification & Pothole Detection</h3>
+            <p>Python, YOLOv8, Google Colab — trained on 8,000+ images for robust detection in Indian road conditions.</p>
+            <button class="btn small" data-proj="proj1">Details</button>
+          </article>
+
+          <article class="project-card">
+            <h3>Java Mini E-Commerce App</h3>
+            <p>Java, JSP, Servlets, MySQL — MVC architecture, product listing, cart, order management, deployed on Tomcat.</p>
+            <a href="http://localhost:8080/Ecommers/"><button class="btn small" data-proj="proj2">Details</button></a>
+          </article>
+
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div><strong>Languages</strong><p>Python, Java, C, HTML/CSS, SQL, JavaScript</p></div>
+          <div><strong>Frameworks / Tools</strong><p>Spring Boot, YOLO, JSP, Servlets, Git</p></div>
+          <div><strong>Developer Tools</strong><p>Eclipse, Visual Studio, Google Colab</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience & Education</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Java Full Stack Trainee — Codegnan IT Solutions</h4>
+            <span class="small muted">June 2025 — Present</span>
+            <p>Training in full stack development, REST APIs with Spring Boot, JDBC, and front-end work.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>B.Tech — KKR & KSR Institute of Technology & Sciences</h4>
+            <span class="small muted">Nov 2021 — May 2025</span>
+            <p>Electronics & Communication Engineering — coursework in VLSI, Embedded Systems, Digital Image Processing and IoT.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Get in touch</h2>
+          <p>I'm available for internships, entry-level roles, and collaborative projects. Prefer email for first contact.</p>
+          <p><strong>Email:</strong> <a href="mailto:gopiavala702@gmail.com">gopiavala702@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/gopi2123456" target="_blank" rel="noopener">github.com/gopi2123456</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aavala-gopi-70427a260" target="_blank" rel="noopener">linkedin.com/in/aavala-gopi-70427a260</a></p>
+        </div>
+
+        <form class="contact-form" onsubmit="return handleContact(event)">
+          <label>
+            Your name
+            <input name="name" type="text" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+          
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aavala Gopi — Built with ❤️ • <a href="#home">Back to top</a></p>
     </div>
-  </section>
-
-  <!-- Certifications -->
-  <section class="certifications glass">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Blue Prism – Intelligent Automation Virtual Internship (AICTE, 2023)</li>
-      <li>Research Internship on LIDAR at NARL</li>
-    </ul>
-  </section>
-
-  <!-- Leadership -->
-  <section class="leadership margin">
-    <h2>Leadership & Activities</h2>
-    <br>
-    <p>Served as Class Representative at KITS College (2023–2025), coordinated activities & improved communication between faculty and students.</p>
-    <p>Participated in IoT & ML Hackathon at MAGNIS Technologies Pvt. Ltd and workshops on PCB & Embedded Systems.</p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact glass">
-    <h2>Contact Me</h2>
-    <p>📧 <a href="mailto:gopiavala702@gmail.com">gopiavala702@gmail.com</a></p>
-    <p>📱 8309308146</p>
-    <p>🔗 <a href="https://linkedin.com/in/aavala-gopi-70427a260" target="_blank">LinkedIn</a> | <a href="https://github.com/gopi2123456" target="_blank">GitHub</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Aavala Gopi. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Project modals -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
-
